@@ -1,21 +1,91 @@
 import React from "react";
-import axios from "axios";
 
-export default function Weather(props) {
-  function handleResponse(response) {
-    console.log(
-      `The weather in ${response.data.name} is ${Math.round(
-        response.data.main.temp
-      )}°C`
-    );
-  }
-  let apiKey = "3a94f3778290bfeee61278505dbbe51d";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(handleResponse);
-
+export default function Weather() {
   return (
     <div className="weather">
-      <h2>Hello from Weather News</h2>
+      <ul className="city-list">
+        <li>Lisbon</li>
+        <li>Paris</li>
+        <li>Sydney</li>
+        <li>San Francisco</li>
+      </ul>
+      <form>
+        <input type="search" />
+        <button type="submit" className="search-button">
+          Search
+        </button>
+        <button type="submit" className="current-button">
+          Current
+        </button>
+      </form>
+      <h1>Lisbon</h1>
+      <p>
+        Thursday 15:54 <br /> Clouds
+      </p>
+      <div className="weather-details">
+        <div>
+          <p>
+            ☁️ 14<sup>°C</sup>
+          </p>
+        </div>
+        <div>
+          <p>
+            Precipitation: 82% <br />
+            Wind: 4km/h
+          </p>
+        </div>
+      </div>
+      <div className="weather-forecast">
+        <ul className="forecast-container">
+          <li>
+            <ul className="forecast-content">
+              <li>Fri</li>
+              <li>☁️</li>
+              <li>13°</li>
+            </ul>
+          </li>
+          <li>
+            <ul className="forecast-content">
+              <li>Sat</li>
+              <li>🌞</li>
+              <li>15°</li>
+            </ul>
+          </li>
+          <li>
+            <ul className="forecast-content">
+              <li>Sun</li>
+              <li>🌩️</li>
+              <li>17°</li>
+            </ul>
+          </li>
+          <li>
+            <ul className="forecast-content">
+              <li>Mon</li>
+              <li>🌞</li>
+              <li>16°</li>
+            </ul>
+          </li>
+          <li>
+            <ul className="forecast-content">
+              <li>Tue</li>
+              <li>☁️</li>
+              <li>15°</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div className="footer">
+        <p>
+          <a
+            href="https://github.com/ZoTiana/testreact"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>
+          ,by <a href="mailto:andriamifidy@gmail.com">Zo Tiana</a>
+        </p>
+      </div>
     </div>
   );
 }
