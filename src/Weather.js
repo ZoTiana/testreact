@@ -24,7 +24,7 @@ export default function Weather() {
       </p>
       <div className="weather-details">
         <div>
-          <p>
+          <p className="temperature">
             ☁️ 14<sup>°C</sup>
           </p>
         </div>
@@ -83,7 +83,7 @@ export default function Weather() {
           >
             Open-source code
           </a>
-          ,by <a href="mailto:andriamifidy@gmail.com">Zo Tiana</a>
+          , by <a href="mailto:andriamifidy@gmail.com">Zo Tiana</a>
         </p>
       </div>
     </div>

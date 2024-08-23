@@ -50,8 +50,14 @@ div .weather-details {
   display: flex;
   justify-content: space-around;
 }
-p .temperature {
-  font-size: 20px;
+div .footer {
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+}
+.temperature {
+  font-size: 25px;
 }
 .weather {
   border: 1px solid black;
@@ -83,4 +89,11 @@ p .temperature {
   border-radius: 5px;
   color: #fff;
   padding: 12px 15px;
+}
+.forecast-container li {
+  display: inline-block;
+}
+.forecast-content li {
+  display: block;
+  padding: 10px 15px;
 }
