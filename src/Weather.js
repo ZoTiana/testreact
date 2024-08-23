@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather() {
   return (
@@ -25,7 +26,13 @@ export default function Weather() {
       <div className="weather-details">
         <div>
           <p className="temperature">
-            ☁️ 14<sup>°C</sup>
+            <ReactAnimatedWeather
+              icon={"CLEAR_DAY"}
+              color={"black"}
+              size={50}
+              animate={false}
+            />
+            14<sup>°C</sup>
           </p>
         </div>
         <div>
@@ -40,35 +47,70 @@ export default function Weather() {
           <li>
             <ul className="forecast-content">
               <li>Fri</li>
-              <li>☁️</li>
+              <li>
+                <ReactAnimatedWeather
+                  icon={"RAIN"}
+                  color={"black"}
+                  size={20}
+                  animate={false}
+                />
+              </li>
               <li>13°</li>
             </ul>
           </li>
           <li>
             <ul className="forecast-content">
               <li>Sat</li>
-              <li>🌞</li>
+              <li>
+                <ReactAnimatedWeather
+                  icon={"CLOUDY"}
+                  color={"black"}
+                  size={20}
+                  animate={false}
+                />
+              </li>
               <li>15°</li>
             </ul>
           </li>
           <li>
             <ul className="forecast-content">
               <li>Sun</li>
-              <li>🌩️</li>
+              <li>
+                <ReactAnimatedWeather
+                  icon={"FOG"}
+                  color={"black"}
+                  size={20}
+                  animate={false}
+                />
+              </li>
               <li>17°</li>
             </ul>
           </li>
           <li>
             <ul className="forecast-content">
               <li>Mon</li>
-              <li>🌞</li>
+              <li>
+                <ReactAnimatedWeather
+                  icon={"PARTLY_CLOUDY_DAY"}
+                  color={"black"}
+                  size={20}
+                  animate={false}
+                />
+              </li>
               <li>16°</li>
             </ul>
           </li>
           <li>
             <ul className="forecast-content">
               <li>Tue</li>
-              <li>☁️</li>
+              <li>
+                <ReactAnimatedWeather
+                  icon={"CLEAR_DAY"}
+                  color={"black"}
+                  size={20}
+                  animate={false}
+                />
+              </li>
               <li>15°</li>
             </ul>
           </li>
