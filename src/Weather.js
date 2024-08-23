@@ -15,7 +15,7 @@ export default function Weather(props) {
 
   return (
     <div className="weather">
-      <h2>Hello from Weather</h2>
+      <h2>Hello from Weather News</h2>
     </div>
   );
 }
